@@ -1,32 +1,15 @@
+Welcome to your new dbt project!
 
-# Telegram Medical Insights — dbt Project
+### Using the starter project
 
-This dbt project is part of the Telegram Medical Insights pipeline. It transforms, models, and documents data scraped from Ethiopian medical Telegram channels and loaded into PostgreSQL.
+Try running the following commands:
+- dbt run
+- dbt test
 
-## Project Structure
 
-- `models/example/` — Example dbt models and schema
-- `analyses/`, `macros/`, `seeds/`, `snapshots/`, `tests/` — Standard dbt folders for advanced modeling and testing
-- `dbt_project.yml` — Project configuration
-
-## Usage
-
-1. Ensure your PostgreSQL database is running and loaded with raw Telegram data.
-2. Configure your dbt profile to connect to the database.
-3. Run dbt models:
-   - `dbt run` — Build models
-   - `dbt test` — Run data quality tests
-   - `dbt docs generate` — Generate documentation
-   - `dbt docs serve` — View docs in your browser
-
-## Example Models
-
-- `my_first_dbt_model.sql` — Example transformation
-- `my_second_dbt_model.sql` — Example transformation
-- `schema.yml` — Data quality tests and documentation
-
-## Resources
-
-- [dbt Documentation](https://docs.getdbt.com/docs/introduction)
-- [dbt Discourse](https://discourse.getdbt.com/)
-- [dbt Community Slack](https://community.getdbt.com/)
+### Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
