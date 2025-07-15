@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+telegram_pipeline/__init__.py
+telegram_pipeline/assets.py
+telegram_pipeline/schedules.py
+telegram_pipeline.egg-info/PKG-INFO
+telegram_pipeline.egg-info/SOURCES.txt
+telegram_pipeline.egg-info/dependency_links.txt
+telegram_pipeline.egg-info/requires.txt
+telegram_pipeline.egg-info/top_level.txt
