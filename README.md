@@ -46,7 +46,7 @@ telegram-medical-insights/
 ### 1. Clone & Configure
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/ayanasamuel8.git
 cd telegram-medical-insights
 ```
 
