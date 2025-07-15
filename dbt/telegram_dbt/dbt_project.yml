@@ -31,6 +31,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   telegram_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    +materialized: table
+    marts:
+      fct_messages:
+        +post-hook:
+          - |
+            DO $$
+            BEGIN
+              IF NOT EXISTS (
+                SELECT 1 FROM pg_constraint
+                WHERE conname = 'fct_messages_pkey'
+              ) THEN
+                ALTER TABLE {{ this }} ADD CONSTRAINT fct_messages_pkey PRIMARY KEY (message_id);
+              END IF;
+            END;
+            $$;
