@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: fct_messages
+    description: Fact table of Telegram messages
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+          - unique
+  - name: fct_image_detections
+    description: Object detection enrichment linked to Telegram messages
+    columns:
+      - name: detection_id
+        tests:
+          - not_null
+          - unique
+      - name: message_id
+        tests:
+          - not_null
